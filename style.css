@@ -1,0 +1,35 @@
+/* Button Style */
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: colorBlink 0.8s infinite; /* Tumia animation kwa button */
+}
+
+/* Animation Keyframes for Blinking with Multiple Colors */
+@keyframes colorBlink {
+    0% {
+        background-color: #FF5733; /* Rangi ya machungwa */
+    }
+    20% {
+        background-color: #33FF57; /* Rangi ya kijani kibichi */
+    }
+    40% {
+        background-color: #3357FF; /* Rangi ya bluu */
+    }
+    60% {
+        background-color: #FF33A6; /* Rangi ya waridi */
+    }
+    80% {
+        background-color: #FFC300; /* Rangi ya njano */
+    }
+    100% {
+        background-color: #FF5733; /* Rudi kwenye rangi ya machungwa */
+    }
+}
+
+button:hover {
+    opacity: 0.8; /* Kidogo kififie unapobonyeza */
+}

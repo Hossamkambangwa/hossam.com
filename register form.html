@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Registration</title>
+    <style>
+        body{
+          background-color: grey;
+        }
+
+        /* Panga fomu kwa flexbox kwa mpangilio mzuri */
+        form {
+            display: flex;
+            flex-direction: column; /* Weka vibox kwa mstari wima */
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        div.sam{
+            background-color: aquamarine;
+            width: 30%;
+            border-radius: 20px;
+        }
+
+        label, input {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="sam">
+    <h2>Register</h2>
+    <form action="register.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="professional">Professional:</label>
+        <input type="text" name="professional" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" name="phone" required><br>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" name="nationality" required><br>
+
+        <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="log in.html">Login here</a></p>
+    </div>
+    </center>
+</body>
+</html>
